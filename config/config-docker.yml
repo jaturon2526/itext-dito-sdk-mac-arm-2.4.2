@@ -1,0 +1,22 @@
+server:
+  applicationConnectors:
+    - type: http
+      port: 8080
+  adminConnectors:
+    - type: http
+      port: 8081
+  requestLog:
+    appenders:
+      - {archivedFileCount: 25, archivedLogFilenamePattern: /var/log/dito/dito-request-%d.log,
+         currentLogFilename: /var/log/dito/dito-request-current.log,
+         type: file}  
+  rootPath: /api/
+logging:
+  appenders:
+    - {archivedFileCount: 25, archivedLogFilenamePattern: /var/log/dito/dito-pdf-producer-%d.log,
+       currentLogFilename: /var/log/dito/dito-pdf-producer-current.log,
+       type: file}
+  level: INFO
+  loggers: {com.itextpdf: DEBUG}
+licenseFile: /var/opt/dito/shared/license.json
+workDirectory: /var/opt/dito

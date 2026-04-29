@@ -1,0 +1,17 @@
+logAppenders:
+- type: file
+  # level: WARN
+- type: stdout
+  # level: WARN
+
+pdfProducerReportCache:
+  maxSize: 1000
+  expireAfterWrite: P1D
+templateDeploymentFeature:
+  enabled: true
+  timeout:
+    eachOperationRetryMillis: 500
+    eachOperationRetryCount: 10
+    allBlockWaitMillis: 5000
+pdfProductionTemplateHttpFetchingMode:
+  cacheTTL: PT10M

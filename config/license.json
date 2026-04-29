@@ -1,0 +1,34 @@
+{
+  "product": "dito-sdk",
+  "licensee": {
+    "company": "Chanwanich Security Printing Co., Ltd (Head Office)",
+    "name": "Jaturon Pantasuma",
+    "email": "jaturon.p@chanwanich.com"
+  },
+  "key": "2f3dd97524f0c40acd464b1ddbf091764a8e6a367e5dbca26bec5f886a61f13b",
+  "creationDate": "2022-08-15",
+  "expirationDate": "2072-08-15",
+  "onExpiration": "grace",
+  "gracePeriod": "30d0h0m",
+  "platform": "any",
+  "licenseType": "production",
+  "deploymentType": "instance",
+  "productVersion": {
+    "major": 2,
+    "minor": 4
+  },
+  "limits": {
+    "default": {
+      "limitType": "unlimited",
+      "sendEvents": false
+    }
+  },
+  "eventReporting": {
+    "reportingType": [
+      "local"
+    ]
+  },
+  "licenseVersion": "1.0.0",
+  "sendStatistics": "disabled",
+  "signature": "QQHjxVaFcn1XR4aUH7Ps6w0vaBehT6fxPnowNuOqlufMV2MlH8ToLaTeyCueI2AemJen1p+/aA5WG//mvGZobvHqmy7hYy4Xz1UnW6JaVkzqz27rA6Uis3XsF0fjST1n5DkIFK5jl98t5orqasT57fyDJsm8ERTWi2tjluxmnmP08RqEal3vSfD8u+xNp7OgJ/boiWjmhszd+ibo8VxgKRmIDck0GUp7+tOEICoLfawDkghDYYUeuM+zTNMSmXKfKrcNnueDnfX+UJaGxMNOWyXd+hgdVDieSCPnvn24ZyZ5HenuQznn/roebqTE2FbeaAt9Si/D28AUnSmjo/pDWfb4dcFWkDWxkjoUBivQkWfrMZmq7GApSVcWTU55n/S5y7t2YOkz4VyB5Dvprj45WgeTcExniYX/HztBasVISSVItVFOmQ49smEwt87WbqC6QT7507fXMpOiTXxY+zPRmYWb9JJdTLdV3QGQN2onRtPrU8TPNlX0eTAFXdXqAOfcKgkC696z8v54IYIMbpoIoYIJvIZvescZ1Dhg6/36KOVFBIzyv/44CvJ6+3b1bNSTkpttkx0XOUqqssUn4A2sAXoJWCpu5PWh5DDJzBOqdlEtnyCBnGufga9yrrGmU3SdHCD8Cc+UVSIFWYAv6y0a5Lfobg0IisrnsTA6tVAq8t0="
+}

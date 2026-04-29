@@ -1,0 +1,26 @@
+services:
+  dito-sdk:
+    image: docker.io/jaturon2526/itext-dito-sdk-mac-arm64:2.0.5
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dito-sdk
+    ports:
+      - "8070:8080"
+      - "8071:8081"
+    restart: always
+    environment:
+      - TZ=Asia/Bangkok # กำหนดเขตเวลาประเทศไทย
+      - DITO_LICENSE_FILE=license.json
+      - DITO_USER_CONFIG=user.config.yml
+    volumes:
+      # ใช้การ Bind mount แบบง่ายเพื่อให้จัดการไฟล์บนเครื่อง Mac ได้สะดวก
+      - ./config:/var/opt/dito/shared:ro,Z
+      - ./work:/var/opt/dito:rw,Z
+      - ./log:/var/log/dito:rw,Z
+    networks:
+      - itextnet
+networks:
+  itextnet:
+    name: itextnet
+    driver: bridge
